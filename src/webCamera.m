@@ -4,11 +4,7 @@ preview(cam);
 pause;
 % get snapshot of the image
 image = snapshot(cam);
-figure;
-imshow(image,[]);
 %send to detect face
-FaceDetection(image)
-pause;
-ChangeColorFace(image)
+FaceDetection(image);
 closePreview(cam);
 clear('cam');
